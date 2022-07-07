@@ -39,17 +39,13 @@
         <nav class="collapse navbar-collapse" role="navigation">
           <ul class="nav navbar-nav">
             <li>
-              <a href="/books">Books</a>
-            </li>
+                <a href="/">Home</a>
+              </li>
             <li>
-              <a href="#">Authors</a>
+              <a href="/students">Students</a>
             </li>
-            <li>
-              <a href="#">Category</a>
-            </li>
-            <li>
-              <a href="#">Category</a>
-            </li>
+           
+           
           </ul>
           <ul class="nav navbar-right navbar-nav">
             <li class="dropdown">
@@ -78,7 +74,7 @@
         <div class="row">
           <div class="col-md-7">
             <h1>
-              Add Book
+              Add Student
               <p class="lead"></p>
             </h1>
           </div>
@@ -110,36 +106,32 @@
             <div class="panel-body">
               <!--/stories-->
               <div style="width: 800px; margin: 0 auto">
-                <form action ="/books/edit/<%=book.id%>" method="POST">
-                  <!-- <label>Book ID</label><br>
-                  <input type="text" name="id" value="<%=book._id%>"/><br/><br/> -->
-                  <label for="bookname">Name of Book</label><br>
+                <form action ="/students/addstudent" method="POST">
+                  <label for="name">Name </label><br>
                   <input
                     type="text"
-                    id="bookName"
-                    name="bookName"
-                    value="<%=book.bookName%>"
+                    id="name"
+                    name="name"
                   /><br /><br />
-                  <label for="author">Author</label><br>
+                  <label for="email">Email</label><br>
                   <input
                     type="text"
-                    id="author"
-                    name="author"
-                    value="<%=book.author%>"
+                    id="email"
+                    name="email"
                   /><br /><br />
-                  <label for="genre">Genre</label><br>
+                  <label for="class">Class</label><br>
                   <input
                     type="text"
-                    id="genre"
-                    name="genre"
-                    value="<%=book.genre%>"
+                    id="class"
+                    name="class"
                   /><br /><br />
+                  <label for="marks">Marks</label><br>
                   <input
-                  type="file"
-                  id="image"
-                  name="image"
-                  value="<%=book.image%>"
-                /><br /><br />
+                    type="text"
+                    id="marks"
+                    name="marks"
+                  /><br /><br />
+                  
                   <button type="submit" > Submit </button>
                 </form>
               </div>

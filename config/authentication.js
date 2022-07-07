@@ -2,7 +2,7 @@ const session = require('express-session')
 const mongo=require('connect-mongodb-session')(session)
 
 const mystore = new mongo({
-    uri : 'mongodb+srv://mongodbusername:mongodbcloud@workspace.fvodq2b.mongodb.net/LibraryApp?retryWrites=true&w=majority',
+    uri : 'mongodb+srv://mongodbusername:mongodbcloud@workspace.fvodq2b.mongodb.net/StudentManagement?retryWrites=true&w=majority',
     collection:"mysession"
 }) 
 const isLoggedIn = (req,res,next)=>{

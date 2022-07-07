@@ -42,7 +42,7 @@
               <a href="/books">Books</a>
             </li>
             <li>
-              <a href="/authors">Authors</a>
+              <a href="#">Authors</a>
             </li>
             <li>
               <a href="#">Category</a>
@@ -110,30 +110,37 @@
             <div class="panel-body">
               <!--/stories-->
               <div style="width: 800px; margin: 0 auto">
-                <form action ="/books/addbook" method="POST">
-                  <label for="bookname">Name of Book</label><br>
+                <form action ="/students/edit/<%=student.id%>" method="POST">
+                  <label for="name">Name</label><br>
                   <input
                     type="text"
-                    id="bookName"
-                    name="bookName"
+                    id="name"
+                    name="name"
+                    value="<%=student.name%>"
                   /><br /><br />
-                  <label for="author">Author</label><br>
+                  <label for="email">Email</label><br>
                   <input
                     type="text"
-                    id="author"
-                    name="author"
+                    id="email"
+                    name="email"
+                    value="<%=student.email%>"
                   /><br /><br />
-                  <label for="author">Genre</label><br>
+                  <label for="class">Class</label><br>
                   <input
                     type="text"
-                    id="genre"
-                    name="genre"
+                    id="class"
+                    name="class"
+                    value="<%=student.class%>"
                   /><br /><br />
+                  <label for="marks">Marks</label><br>
+
                   <input
-                  type="file"
-                  id="image"
-                  name="image"
+                  type="text"
+                  id="marks"
+                  name="marks"
+                  value="<%=student.marks%>"
                 /><br /><br />
+                
                   <button type="submit" > Submit </button>
                 </form>
               </div>

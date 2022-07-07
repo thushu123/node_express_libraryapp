@@ -39,17 +39,12 @@
         <nav class="collapse navbar-collapse" role="navigation">
           <ul class="nav navbar-nav">
             <li>
-              <a href="/books">Books</a>
-            </li>
+                <a href="/">Home</a>
+              </li>
             <li>
-              <a href="/authors">Authors</a>
+              <a href="/students">Students</a>
             </li>
-            <li>
-              <a href="#">Category</a>
-            </li>
-            <li>
-              <a href="#">Category</a>
-            </li>
+            
           </ul>
           <ul class="nav navbar-right navbar-nav">
             <li class="dropdown">
@@ -78,7 +73,7 @@
         <div class="row">
           <div class="col-md-7">
             <h1>
-              Book Details
+              Student Details
               <p class="lead"></p>
             </h1>
           </div>
@@ -112,16 +107,17 @@
               <div class="row">   
               <!-- to get details from array books[index].property -->
                 <br>
-                <div class="col-md-2 col-sm-3 text-center">
-                  <a class="story-title" href="#"><img alt="" src="/images/<%=book.image%>" style="width:100px;height:100px" class="img-circle"></a>
-                </div>
+               
                 <div class="col-md-10 col-sm-9">
-                  <h3><%=book.bookName%></h3>
+                  <h3><%=student.name%></h3>
                   <div class="row">
                     <div class="col-xs-9">
-                      <h4><span class="label label-default"><%=book.author%></span></h4><h4>
-                      <small style="font-family:courier,'new courier';" class="text-muted"><%=book.genre%></small>
-                      </h4></div>
+                      <h4><span class="label label-default"><%="Email:"%><%=student.email%></span></h4><h4>
+                      <small style="font-family:courier,'new courier';" class="text-muted"><%="Class:"%><%=student.class%><%=student.class%></small>
+
+                    </h4>
+                    <small style="font-family:courier,'new courier';" class="text-muted"><%="Marks:"%><%=student.marks%><%=student.class%></small>
+                </div>
                     <div class="col-xs-3"></div>
                   </div>
                   <br><br>
